@@ -32,7 +32,7 @@ app.post('/', function(req, res) {
 
     // Use that city name to fetch data
     // Use the API_KEY in the '.env' file
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=488775c9f8eb17e8401cd3cf964a9f77`;
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=fadf8cd76f95643600c12f8b347d6551`;
 
     // Request for data using the URL
     request(url, function(err, response, body) {
