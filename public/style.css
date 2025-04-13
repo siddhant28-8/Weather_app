@@ -1,84 +1,99 @@
 body {
-    width: auto;
-    margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* This will format the whole fieldset content*/
-  
-  .container {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+.ghost-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 60%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-right: 10px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.ghost-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+.ghost-button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.ghost-button:hover {
+  background-color: #574b90;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 16px;
+}
+
+.card-header {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.grid p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-deck {
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card-deck .card {
+  margin: 10px;
+}
+
+img {
+  max-width: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .ghost-input {
     width: 80%;
-    margin: 0 auto;
   }
-  
-  /* This will format the whole fieldset content*/
-  
-  fieldset {
-    display: block;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0em;
-    -webkit-padding-start: 0em;
-    -webkit-padding-end: 0em;
-    -webkit-padding-after: 0em;
-    border: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    min-width: -webkit-min-content;
-    padding: 30px;
+
+  .card-deck {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Format the input section */
-  
-  /* Format the input, paragraph, hover effect, focus and button */
-  .ghost-input,
-  p {
-    display: block;
-    font-weight: 300;
-    width: 100%;
-    font-size: 25px;
-    border: 0px;
-    outline: none;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #4b545f;
-    background: #fff;
-    font-family: Open Sans, Verdana;
-    padding: 10px 15px;
-    margin: 30px 0px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  
-  .ghost-input:focus {
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .ghost-button {
-    background-color: transparent;
-    border: 2px solid #ddd;
-    padding: 10px 30px;
-    width: 100%;
-    min-width: 350px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  
-  .ghost-button:hover {
-    border: 2px solid #515151;
-  }
-  
-  p {
-    color: #e64a19;
-  }
+}
